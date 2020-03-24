@@ -26,7 +26,7 @@ class HelloWorld(Resource):
 class HelloWorld(Resource):
     def get(self):
         anwserList = ['yes','no']
-        return secrets.choice(anwserList))    
+        return secrets.choice(anwserList)
         
 
 if __name__ == '__main__':
