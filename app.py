@@ -13,6 +13,11 @@ class HelloWorld(Resource):
 class HelloWorld(Resource):
     def get(self):
         return "I'm here"   
+
+@api.route('/I-love-my-dad')
+class HelloWorld(Resource):
+    def get(self):
+        return 'my dad is the best dad ever'
     
 if __name__ == '__main__':
     app.run(debug=True)
