@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restx import Resource, Api
-import random
+import secrets
+
 
 app = Flask(__name__)
 api = Api(app)
@@ -25,7 +26,7 @@ class HelloWorld(Resource):
 class HelloWorld(Resource):
     def get(self):
         anwserList = ['yes','no']
-        return random.choice(anwserList))    
+        return secrets.choice(anwserList))    
         
 
 if __name__ == '__main__':
